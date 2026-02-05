@@ -21,15 +21,10 @@ Dataset: CarDekho used car dataset
 Features Used:
 
 Kilometers Driven
-
 Car Age
-
 Fuel Type
-
 Seller Type
-
 Transmission
-
 Owner Type
 
 The model learns pricing patterns from historical resale data and predicts estimated selling price.
@@ -41,15 +36,10 @@ The Flask app allows users to input car details and instantly get a predicted re
 User Inputs:
 
 Kilometers Driven
-
 Car Age
-
 Fuel Type
-
 Seller Type
-
 Transmission
-
 Ownership History
 
 🛠 Tech Stack
@@ -61,7 +51,7 @@ Frontend	HTML, CSS
 Model Storage	Pickle
 ▶ How to Run the Project
 1️⃣ Clone the repository
-git clone https://github.com/YOUR-USERNAME/Used-Car-Price-Predictor.git
+git clone https://github.com/ayushdutta887/Used-Car-Price-Predictor.git
 cd Used-Car-Price-Predictor
 2️⃣ Install dependencies
 pip install -r requirements.txt
@@ -93,12 +83,9 @@ Used-Car-Price-Predictor/
 🎯 Future Improvements
 
 Add more car features (brand, engine size)
-
 Improve model accuracy with hyperparameter tuning
-
 Deploy the app online
 
 👨‍💻 Author
-
 Ayush Dutta
 Machine Learning Enthusiast
