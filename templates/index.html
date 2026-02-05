@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Price Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🚗 Used Car Price Predictor</h1>
+
+        <form action="/predict" method="post">
+
+            <input type="number" name="present_price" placeholder="Present Price (in lakhs)" required>
+            <input type="number" name="kms_driven" placeholder="Kilometers Driven" required>
+            <input type="number" name="car_age" placeholder="Car Age (years)" required>
+
+            <select name="fuel">
+              <option value="Petrol">Petrol</option>
+              <option value="Diesel">Diesel</option>
+              <option value="LPG">LPG</option>
+              <option value="Electric">Electric</option>
+            </select>
+
+            <select name="seller_type">
+               <option value="Individual">Individual</option>
+               <option value="Dealer">Dealer</option>
+               <option value="Trustmark Dealer">Trustmark Dealer</option>
+           </select>
+
+            <select name="transmission">
+              <option value="Manual">Manual</option>
+              <option value="Automatic">Automatic</option>
+            </select>
+
+            <select name="owner">
+               <option value="First Owner">First Owner</option>
+               <option value="Second Owner">Second Owner</option>
+               <option value="Third Owner">Third Owner</option>
+               <option value="Fourth & Above Owner">Fourth & Above Owner</option>
+            <option value="Test Drive Car">Test Drive Car</option>
+            </select>
+
+            <button type="submit">Predict Price</button>
+        </form>
+
+        <h2>{{ prediction_text }}</h2>
+    </div>
+</body>
+</html>
