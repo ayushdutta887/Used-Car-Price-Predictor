@@ -60,32 +60,6 @@ python model_training.py
 4️⃣ Run the web app
 python app.py
 
-Open in browser:
-
-http://127.0.0.1:5000
-📂 Project Structure
-Used-Car-Price-Predictor/
-│
-├── app.py                  # Flask web app
-├── model_training.py       # ML training script
-│
-├── data/
-│   └── car_data.csv
-│
-├── model/
-│   └── car_price_model.pkl
-│
-├── templates/
-│   └── index.html
-│
-└── static/
-    └── style.css
-🎯 Future Improvements
-
-Add more car features (brand, engine size)
-Improve model accuracy with hyperparameter tuning
-Deploy the app online
-
 👨‍💻 Author
 Ayush Dutta
 Machine Learning Enthusiast
